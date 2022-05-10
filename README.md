@@ -1,7 +1,6 @@
 # Jeorje
-Mexican version of an automated proof checker named after Curious George, the monkey.
+An automated proof checker named after Curious George, the monkey.
 
-Jeorje is an automated proof checker that verifies correctness of proofs in natural deduction (and semantic tableaux + transformational proof in the future).
-Jeorje will also handle program correctness and z-specification rule/type checking. 
+Jeorje is an automated proof checker that verifies correctness of proofs in natural deduction, with some type-checking. 
 
-George uses maximal munch to scan input tokens in predicate logic, and then uses a modified version of the railroad-shunt algorithm to generate a parse tree. Then, rules are checked to ensure correct usage.
+It uses maximal munch to scan input tokens in predicate logic, and then uses a modified version of the shunting yard algorithm to generate a parse tree. Then, rules are checked to ensure correct usage. A symbol table is created to track variables and check for scoped rules, such as implications and forall statements.
